@@ -29,7 +29,7 @@ const strutture: Struttura[] = [
 		zona: "roma",
 		tipologia: "B&B",
 		camere: 6,
-		img: "https://placehold.co/600x400/1C1C1E/C9A227?text=B%26B+Prati+Mazzini",
+		img: "/img/alloggi/mazzini.png",
 	},
 	{
 		id: "bb-prati-risorgimento",
@@ -38,7 +38,7 @@ const strutture: Struttura[] = [
 		zona: "roma",
 		tipologia: "B&B",
 		camere: 5,
-		img: "https://placehold.co/600x400/1C1C1E/C9A227?text=B%26B+Prati+Risorgimento",
+		img: "/img/alloggi/risorgimento.png",
 	},
 	{
 		id: "bb-eur-marconi",
@@ -47,7 +47,7 @@ const strutture: Struttura[] = [
 		zona: "roma",
 		tipologia: "B&B",
 		camere: 4,
-		img: "https://placehold.co/600x400/1C1C1E/C9A227?text=B%26B+Eur+Marconi",
+		img: "/img/alloggi/marconi.png",
 	},
 	{
 		id: "app-prati-cipro-110",
@@ -59,7 +59,7 @@ const strutture: Struttura[] = [
 		bagni: 4,
 		mq: 110,
 		note: "Cucina",
-		img: "https://placehold.co/600x400/1C1C1E/C9A227?text=Appartamento+Cipro+110mq",
+		img: "/img/alloggi/prati110.png",
 	},
 	{
 		id: "app-prati-cipro-90",
@@ -71,7 +71,7 @@ const strutture: Struttura[] = [
 		bagni: 2,
 		mq: 90,
 		note: "Cucina, terrazzo",
-		img: "https://placehold.co/600x400/1C1C1E/C9A227?text=Appartamento+Cipro+90mq",
+		img: "/img/alloggi/prati90.png",
 	},
 	{
 		id: "bb-fiumicino-aeroporto",
@@ -80,7 +80,7 @@ const strutture: Struttura[] = [
 		zona: "fiumicino",
 		tipologia: "B&B",
 		camere: 8,
-		img: "https://placehold.co/600x400/1C1C1E/C9A227?text=B%26B+Fiumicino+Aeroporto",
+		img: "/img/alloggi/fiumicino.png",
 	},
 	{
 		id: "app-fiumicino-darsena",
@@ -92,7 +92,7 @@ const strutture: Struttura[] = [
 		bagni: 3,
 		mq: 130,
 		note: "Salone, cucina",
-		img: "https://placehold.co/600x400/1C1C1E/C9A227?text=Appartamento+Fiumicino+Darsena",
+		img: "/img/alloggi/darsena.png",
 	},
 ];
 
