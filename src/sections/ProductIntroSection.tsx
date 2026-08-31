@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-export function IntroSection() {
+export function ProductIntroSection() {
 	return (
 		<section className="py-24 bg-white">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,8 +14,8 @@ export function IntroSection() {
 					>
 						<img
 							src="/img/placeholder.png"
-							alt="Sezione introduttiva del template landing page"
-							className=" w-full h-auto"
+							alt="Sezione introduttiva del template prodotto"
+							className="shadow-xl w-full h-auto"
 						/>
 					</motion.div>
 					<motion.div
@@ -25,23 +25,19 @@ export function IntroSection() {
 						transition={{ duration: 0.6 }}
 					>
 						<span className="text-[#4ed372] font-bold uppercase text-sm tracking-widest">
-							Sezione introduttiva
+							Introduzione prodotto
 						</span>
 						<h2 className="text-3xl sm:text-4xl font-semibold text-[#26235e] mt-3 mb-6">
-							Spazio ideale per presentare il cliente, il brand o l'offerta
+							Spazio per raccontare cosa rende l'offerta interessante e rilevante
 						</h2>
 						<p className="text-[#5a577f] leading-relaxed mb-4">
-							Questa sezione serve a introdurre in modo più esteso l'identità
-							del cliente, il contesto del servizio o il valore della proposta.
-							Dopo l'impatto iniziale della hero, qui si può spiegare meglio chi
-							si presenta, quale problema risolve e perché l'utente dovrebbe
-							continuare a leggere.
+							Questa sezione serve a sviluppare meglio il racconto del prodotto dopo la hero. Qui si può spiegare il contesto, la logica dell'offerta, il bisogno che intercetta e il motivo per cui rappresenta una soluzione valida o desiderabile.
 						</p>
 						<Link
 							to="#"
 							className="inline-block mt-2 text-[#4ed372] font-semibold text-sm hover:text-[#A8841C] transition-colors"
 						>
-							Approfondimento o pagina di dettaglio →
+							Approfondisci l'offerta →
 						</Link>
 					</motion.div>
 				</div>

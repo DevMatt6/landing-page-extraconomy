@@ -5,41 +5,40 @@ import { BedDouble, KeyRound, Home as HomeIcon, MapPin } from "lucide-react";
 const servizi = [
 	{
 		icon: BedDouble,
-		title: "B&B a Roma",
-		desc: "Camere doppie accoglienti nelle zone Prati e Eur, curate nei minimi dettagli.",
-		href: "/alloggi?zona=roma",
+		title: "Servizio o prodotto principale",
+		desc: "Qui si presenta uno dei pilastri dell'offerta, con un testo breve che ne chiarisce utilità e vantaggi percepiti.",
+		href: "/contatti",
 	},
 	{
 		icon: HomeIcon,
-		title: "Appartamenti Vacanze",
-		desc: "Interi appartamenti spaziosi, ideali per famiglie o gruppi in visita a Roma.",
-		href: "/alloggi?zona=roma",
+		title: "Seconda area dell'offerta",
+		desc: "Questa card può descrivere una categoria complementare, una soluzione alternativa o una variante del servizio principale.",
+		href: "/contatti",
 	},
 	{
 		icon: MapPin,
-		icon2: true,
-		title: "Alloggi a Fiumicino",
-		desc: "Soluzioni comode vicino all'aeroporto, perfette per scali e transiti.",
-		href: "/alloggi?zona=fiumicino",
+		title: "Ambito applicativo o target",
+		desc: "Uno spazio utile per spiegare destinazione d'uso, contesto di applicazione, settore o segmento di pubblico di riferimento.",
+		href: "/contatti",
 	},
 	{
 		icon: KeyRound,
-		title: "Lavora con Noi",
-		desc: "Hai un immobile a Roma? Trasformalo in B&B o casa vacanza con noi.",
-		href: "/lavora-con-noi",
+		title: "Call to action commerciale",
+		desc: "L'ultima card può essere usata per orientare verso una richiesta di contatto, consulenza, preventivo o approfondimento.",
+		href: "/contatti",
 	},
 ];
 
 export function ServiziOverviewSection() {
 	return (
-		<section className="py-24 bg-[#F7F7F5]">
+		<section className="py-24 bg-[#f4f3fb]">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center max-w-3xl mx-auto mb-16">
-					<span className="text-[#C9A227] font-bold uppercase text-sm tracking-widest">
-						I Nostri Alloggi
+					<span className="text-[#4ed372] font-bold uppercase text-sm tracking-widest">
+						Panoramica dell'offerta
 					</span>
-					<h2 className="text-3xl sm:text-4xl font-semibold text-[#1C1C1E] mt-3">
-						Soluzioni di soggiorno per ogni esigenza
+					<h2 className="text-3xl sm:text-4xl font-semibold text-[#26235e] mt-3">
+						Una griglia utile per sintetizzare contenuti chiave della landing page
 					</h2>
 				</div>
 				<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -53,15 +52,15 @@ export function ServiziOverviewSection() {
 						>
 							<Link
 								to={s.href}
-								className="block bg-white border border-[#1C1C1E]/10 p-8 shadow-card hover:shadow-card-hover hover:border-[#C9A227]/40 transition-all h-full"
+								className="block bg-white border border-[#26235e]/10 p-8 hover:shadow-card-hover hover:border-[#4ed372]/40 transition-all h-full"
 							>
-								<div className="w-14 h-14 bg-[#C9A227]/10 flex items-center justify-center mb-5">
-									<s.icon className="w-7 h-7 text-[#C9A227]" />
+								<div className="w-14 h-14 bg-[#4ed372]/10 flex items-center justify-center mb-5">
+									<s.icon className="w-7 h-7 text-[#4ed372]" />
 								</div>
-								<h3 className="text-3xl font-bold text-[#1C1C1E] mb-8">
+								<h3 className="text-3xl font-bold text-[#26235e] mb-8">
 									{s.title}
 								</h3>
-								<p className="text-[#4A4A4A] text-sm leading-relaxed">
+								<p className="text-[#5a577f] text-sm leading-relaxed">
 									{s.desc}
 								</p>
 							</Link>

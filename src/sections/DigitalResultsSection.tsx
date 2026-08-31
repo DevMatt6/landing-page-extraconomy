@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 
-const punti = [
-	"Punto di forza che rafforza il valore percepito",
-	"Aspetto operativo o qualitativo che genera fiducia",
-	"Elemento differenziante rispetto ai concorrenti",
-	"Rassicurazione utile prima della call to action finale",
+const results = [
+	"Inserisci qui un risultato, ad esempio “Meno attività manuali e meno dispersione operativa”",
+	"Maggiore chiarezza nell'organizzazione di attività, dati o processi",
+	"Esperienza utente più lineare, accessibile e controllabile",
+	"Percezione di modernità, efficienza e miglioramento del lavoro quotidiano",
 ];
 
-export function MissionSection() {
+export function DigitalResultsSection() {
 	return (
 		<section className="py-24 bg-[#f4f3fb]">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
@@ -18,19 +18,19 @@ export function MissionSection() {
 					transition={{ duration: 0.6 }}
 				>
 					<span className="text-[#4ed372] font-bold uppercase text-sm tracking-widest">
-						Sezione di rassicurazione
+						Risultati e impatto
 					</span>
 					<h2 className="text-3xl sm:text-4xl font-semibold text-[#26235e] mt-4 mb-6">
-						Argomenti utili per consolidare fiducia e motivare la scelta
+						Spazio per descrivere il risultato concreto generato dalla soluzione digitale
 					</h2>
 					<p className="text-[#5a577f] text-lg leading-relaxed mb-8">
-						Questa sezione è pensata per rafforzare la credibilità del cliente prima dell'ultima spinta alla conversione. Qui possono trovare spazio qualità del servizio, metodo, esperienza, risultati, assistenza o qualsiasi fattore che riduca dubbi e resistenze.
+						Questa sezione serve a tradurre funzionalità e processo in vantaggi concreti. È utile quando vuoi mostrare l'impatto della soluzione sul lavoro, sull'organizzazione o sull'efficienza percepita.
 					</p>
 
 					<ul className="space-y-4">
-						{punti.map((punto, index) => (
+						{results.map((result, index) => (
 							<motion.li
-								key={punto}
+								key={result}
 								initial={{ opacity: 0, x: -20 }}
 								whileInView={{ opacity: 1, x: 0 }}
 								viewport={{ once: true }}
@@ -38,7 +38,7 @@ export function MissionSection() {
 								className="flex items-start gap-3 text-[#26235e]"
 							>
 								<span className="w-2.5 h-2.5 bg-[#4ed372] mt-2 shrink-0" />
-								<span className="leading-relaxed">{punto}</span>
+								<span className="leading-relaxed">{result}</span>
 							</motion.li>
 						))}
 					</ul>
@@ -52,7 +52,7 @@ export function MissionSection() {
 				>
 					<img
 						src="/img/placeholder.png"
-						alt="Sezione di supporto alla conversione del template landing page"
+						alt="Sezione risultati del template digitale"
 						className="w-full h-auto"
 					/>
 				</motion.div>
