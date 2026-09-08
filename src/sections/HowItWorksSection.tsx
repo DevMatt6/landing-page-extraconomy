@@ -3,21 +3,21 @@ import { motion } from "framer-motion";
 const steps = [
 	{
 		number: "01",
-		title: "Ingresso e comprensione immediata",
+		title: "Consulenza iniziale gratuita",
 		description:
-			"In questo primo passaggio la pagina deve chiarire subito cosa viene offerto e quale valore porta all'utente.",
+			"Ci racconti la tua situazione: attività, regime fiscale, esigenze. In 30 minuti capiamo insieme di cosa hai bisogno e ti proponiamo la soluzione più adatta, senza impegno.",
 	},
 	{
 		number: "02",
-		title: "Approfondimento dei contenuti chiave",
+		title: "Attivazione e passaggio documenti",
 		description:
-			"Qui si possono spiegare processo, funzionalità, vantaggi o modalità operative con una sequenza facile da seguire.",
+			"Ti guidiamo passo passo nel trasferimento da un eventuale precedente studio o nell'apertura da zero. Tutto online: invii i documenti via cloud, noi pensiamo al resto.",
 	},
 	{
 		number: "03",
-		title: "Attivazione della conversione",
+		title: "Gestione continua e aggiornamento costante",
 		description:
-			"L'ultimo passaggio accompagna l'utente verso il contatto, la richiesta, la prenotazione o qualsiasi azione finale prevista.",
+			"Seguiamo la tua contabilità ogni mese, ti avvisiamo di ogni scadenza e ti teniamo aggiornato sulle novità fiscali che ti riguardano. Tu ti concentri sul lavoro, noi sui numeri.",
 	},
 ];
 
@@ -30,10 +30,10 @@ export function HowItWorksSection() {
 						Come funziona
 					</span>
 					<h2 className="text-3xl sm:text-4xl font-semibold text-[#26235e] mt-3 mb-5">
-						Una sezione utile per descrivere il flusso del servizio o dell'offerta
+						In tre passaggi, la tua contabilità è sotto controllo
 					</h2>
 					<p className="text-[#5a577f] leading-relaxed">
-						Questo blocco è ideale quando il cliente deve spiegare un percorso, un processo o una sequenza operativa in modo semplice e progressivo.
+						Abbiamo semplificato al massimo l'accesso al nostro servizio: niente burocrazia iniziale, niente attese inutili. Parti in pochi giorni.
 					</p>
 				</div>
 

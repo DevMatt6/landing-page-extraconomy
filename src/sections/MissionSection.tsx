@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const punti = [
-	"Punto di forza che rafforza il valore percepito",
-	"Aspetto operativo o qualitativo che genera fiducia",
-	"Elemento differenziante rispetto ai concorrenti",
-	"Rassicurazione utile prima della call to action finale",
+	"Oltre 18 anni di esperienza con liberi professionisti, artigiani e PMI",
+	"Team di commercialisti abilitati, aggiornati costantemente su normative e agevolazioni",
+	"Approccio trasparente: preventivo chiaro, nessun costo nascosto",
+	"Tecnologia cloud per la gestione documentale: accedi ai tuoi dati quando vuoi",
 ];
 
 export function MissionSection() {
@@ -18,13 +18,13 @@ export function MissionSection() {
 					transition={{ duration: 0.6 }}
 				>
 					<span className="text-[#4ed372] font-bold uppercase text-sm tracking-widest">
-						Sezione di rassicurazione
+						Perché affidarsi a noi
 					</span>
 					<h2 className="text-3xl sm:text-4xl font-semibold text-[#26235e] mt-4 mb-6">
-						Argomenti utili per consolidare fiducia e motivare la scelta
+						Competenza, chiarezza e un rapporto diretto che dura nel tempo
 					</h2>
 					<p className="text-[#5a577f] text-lg leading-relaxed mb-8">
-						Questa sezione è pensata per rafforzare la credibilità del cliente prima dell'ultima spinta alla conversione. Qui possono trovare spazio qualità del servizio, metodo, esperienza, risultati, assistenza o qualsiasi fattore che riduca dubbi e resistenze.
+						Non siamo uno studio anonimo: conosciamo ogni cliente per nome, conosciamo la sua storia e lavoriamo per costruire un rapporto stabile nel tempo. Il nostro obiettivo non è gestire pratiche, ma aiutarti a fare scelte fiscali migliori.
 					</p>
 
 					<ul className="space-y-4">
@@ -49,12 +49,25 @@ export function MissionSection() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 0.6, delay: 0.1 }}
+					className="space-y-6"
 				>
-					<img
-						src="/img/placeholder.png"
-						alt="Sezione di supporto alla conversione del template landing page"
-						className="w-full h-auto"
-					/>
+					{[
+						{ number: "300+", label: "Clienti seguiti ogni anno" },
+						{ number: "18", label: "Anni di attività" },
+						{ number: "98%", label: "Tasso di rinnovo contratti" },
+					].map((stat, i) => (
+						<motion.div
+							key={stat.label}
+							initial={{ opacity: 0, x: 30 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							viewport={{ once: true }}
+							transition={{ duration: 0.5, delay: i * 0.1 }}
+							className="bg-white border border-[#26235e]/10 p-8 flex items-center gap-6"
+						>
+							<span className="text-5xl font-bold text-[#26235e]">{stat.number}</span>
+							<span className="text-[#5a577f] text-lg leading-tight">{stat.label}</span>
+						</motion.div>
+					))}
 				</motion.div>
 			</div>
 		</section>

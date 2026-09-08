@@ -16,7 +16,7 @@ export function LandingPage1HeroSection() {
 							className="inline-flex items-center px-4 py-1.5 mb-6 border border-[#4ed372]/30 bg-[#4ed372]/10"
 						>
 							<span className="text-[#4ed372] text-sm font-semibold uppercase tracking-[0.16em]">
-								Categoria, ad esempio “Consulenza fiscale, Studio dentistico o Servizio fotografico”
+								Studio Rossi & Associati — Commercialisti
 							</span>
 						</motion.div>
 
@@ -26,7 +26,7 @@ export function LandingPage1HeroSection() {
 							transition={{ duration: 0.6, delay: 0.1 }}
 							className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
 						>
-							Titolo, ad esempio “Gestione contabile per aziende che vogliono lavorare con più ordine”
+							La tua contabilità in ordine, ogni mese, senza pensieri
 						</motion.h1>
 
 						<motion.p
@@ -35,7 +35,7 @@ export function LandingPage1HeroSection() {
 							transition={{ duration: 0.6, delay: 0.15 }}
 							className="text-lg sm:text-xl text-white/80 font-medium mb-8 max-w-2xl"
 						>
-							Inserisci qui il sottotitolo, ad esempio “Ti aiutiamo a semplificare scadenze, documenti e processi amministrativi”.
+							Gestiamo dichiarazioni, scadenze e adempimenti per freelance, professionisti con Partita IVA e piccole imprese. Tu lavora — al resto pensiamo noi.
 						</motion.p>
 
 						<motion.div
@@ -49,8 +49,8 @@ export function LandingPage1HeroSection() {
 								size="lg"
 								className="bg-[#4ed372] hover:bg-[#66de88] text-[#26235e] font-bold px-8 transition-all hover:scale-105"
 							>
-								<Link to="#">
-									Call to action primaria
+								<Link to="#contatti">
+									Prenota una consulenza gratuita
 									<ArrowRight className="ml-2 w-5 h-5" />
 								</Link>
 							</Button>
@@ -60,7 +60,7 @@ export function LandingPage1HeroSection() {
 								variant="outline"
 								className="text-white border-white/40 bg-transparent hover:bg-white hover:text-[#26235e] px-8 transition-all"
 							>
-								<Link to="#">Call to action secondaria</Link>
+								<Link to="#servizi">Scopri cosa facciamo</Link>
 							</Button>
 						</motion.div>
 					</div>
@@ -75,20 +75,20 @@ export function LandingPage1HeroSection() {
 							<div className="space-y-5">
 								<div className="border-b border-white/10 pb-5">
 									<p className="text-sm uppercase tracking-[0.14em] text-[#4ed372] mb-2">
-										Focus
+										Chi siamo
 									</p>
 									<p className="text-white text-lg leading-relaxed">
-										Inserisci qui una leva di fiducia, ad esempio “Oltre 120 clienti seguiti ogni anno oppure Prima consulenza conoscitiva su appuntamento”.
+										Oltre 18 anni di attività. Più di 300 clienti seguiti ogni anno tra liberi professionisti, ditte individuali e PMI in tutta Italia.
 									</p>
 								</div>
 								<div className="grid sm:grid-cols-2 gap-4">
 									<div className="border border-white/10 p-4">
-										<p className="text-sm uppercase tracking-[0.14em] text-[#4ed372] mb-2">Inserisci qui un elemento chiave</p>
-										<p className="text-white/80 text-sm leading-relaxed">Inserisci qui un contenuto breve, ad esempio “Specializzati in PMI, professionisti e attività locali”.</p>
+										<p className="text-sm uppercase tracking-[0.14em] text-[#4ed372] mb-2">Specializzazione</p>
+										<p className="text-white/80 text-sm leading-relaxed">Freelance, artigiani, professionisti con P.IVA, società di persone e piccole SRL.</p>
 									</div>
 									<div className="border border-white/10 p-4">
-										<p className="text-sm uppercase tracking-[0.14em] text-[#4ed372] mb-2">Inserisci qui un secondo elemento</p>
-										<p className="text-white/80 text-sm leading-relaxed">Inserisci qui un secondo contenuto breve, ad esempio “Risposte rapide via email o appuntamenti anche online”.</p>
+										<p className="text-sm uppercase tracking-[0.14em] text-[#4ed372] mb-2">Come lavoriamo</p>
+										<p className="text-white/80 text-sm leading-relaxed">In studio a Torino o da remoto. Prima consulenza gratuita e senza impegno, anche online.</p>
 									</div>
 								</div>
 							</div>

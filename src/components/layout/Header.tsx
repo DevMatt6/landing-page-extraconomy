@@ -2,7 +2,11 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 
-const navItems: { href: string; label: string }[] = [];
+const navItems: { href: string; label: string }[] = [
+	{ href: "/landingpage1", label: "Landing 1 — Contatto" },
+	{ href: "/landingpage2", label: "Landing 2 — Prodotto" },
+	{ href: "/landingpage3", label: "Landing 3 — Servizio" },
+];
 
 export function Header() {
 	const [isScrolled, setIsScrolled] = useState(false);
